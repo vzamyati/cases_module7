@@ -1,0 +1,134 @@
+<!-- Валерія Замятіна — Практика №7 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Майстер-клас 8</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Raleway:ital,wght@0,400;0,500;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+
+    <style>
+        .ui-section > * {
+            margin-bottom: 9rem;
+        }
+
+        @media screen and (min-width: 721px) {
+            .ui-section {
+                margin-bottom: 12rem;
+            }
+        }
+        .ui-grid > * {
+            color: var(--color-red);
+            background: var(--color-light-orange);
+            padding: 1rem;
+        }
+        @media screen and (min-width: 721px) {
+            .ui-grid > * {
+                padding: 2rem;
+            }
+        }
+
+        .ui-colors {
+            grid-auto-rows: minmax(140px, auto);
+        }
+
+        .ui-colors > * {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: stretch;
+            padding: 1rem;
+        }
+
+        .ui-outline {
+            outline: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        @media screen and (min-width: 721px) {
+            .ui-colors > * {
+                padding: 2rem;
+            }
+        }
+
+        .ui-icons > * {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="layout-header">
+        <div class="layout-container">
+            <div class="header-wrapper">
+                <a href="https://cases.media/creativepractice" class="header-logo">
+                    <img src="./icons/img/logo.png" width="126" height="56" alt="Creative Practice">
+                </a>
+
+                <nav class="header-menu">
+                    <ul class="nav">
+                        <li class="d-none d-desk-block">
+                            <a href="#">Про курс</a>
+                        </li>
+                        <li class="d-none d-desk-block">
+                            <a href="#">Хто викладає</a>
+                        </li>
+                        <li class="dropdown d-none d-desk-block">
+                                <a href="#">Програма курсу</a>
+
+                            <div class="dropdown-wrapper">
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Теорія</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Практика</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="dropdown d-desk-none">
+                            <a href="#">Меню</a>
+                        
+                            <div class="dropdown-wrapper dd-left dd-tab-right">
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Про курс</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Хто викладає</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Програма</a>
+                                    </li>
+                                    <li class="btn d-tab-none">
+                                        <div>
+                                            <a href="#" class="btn-orange">Зареєструватись</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="btn d-none d-tab-block">
+                            <div>
+                                <a href="#" class="btn-orange">Зареєструватись</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
