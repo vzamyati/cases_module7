@@ -11,6 +11,7 @@
     --color-blue-gray: #ACCCFF;
     --color-blue: #0058F1;
     --color-blue-gray: #C8D5EE;
+    --color-bright-blue: #0159F2;
     --color-deep-blue: #004ED4;
     --color-heaven: #5C96FD;
     --color-light-blue-gray: #C8D5EE;
@@ -296,6 +297,7 @@ img {
 .bg-light-blue { background-color: var(--color-light-blue) !important; }
 .bg-blue { background-color: var(--color-blue) !important; }
 .bg-blue-gray { background-color: var(--color-blue-gray) !important; }
+.bg-bright-blue { background-color: var(--color-bright-blue) !important;}
 .bg-deep-blue { background-color: var(--color-deep-blue) !important; }
 .bg-heaven { background-color: var(--color-heaven) !important; }
 .bg-light-blue-gray { background-color: var(--color-light-blue-gray) !important; }
@@ -445,19 +447,19 @@ img {
     height: 16px;
 }
 
-.green-arrow-down { background-image: url(icons/green-arrow-down.svg); }
-.globe-stand {background-image: url(icons/GlobeStand.svg);}
-.book-bookmark {background-image: url(icons/BookBookmark.svg);}
-.hands-clapping {background-image: url(icons/HandsClapping.svg);}
-.film-slate {background-image: url(icons/FilmSlate.svg);}
-.timer {background-image: url(icons/Timer.svg);}
-.magnifying-glass {background-image: url(icons/MagnifyingGlass.svg);}
-.blue-arrow-down {background-image: url(icons/blue-arrow-down.svg);}
-.facebook {background-image: url(icons/facebook.svg);}
-.instagram {background-image: url(icons/instagram.svg);}
-.cases {background-image: url(icons/cases.svg);}
-.telegram {background-image: url(icons/telegram.svg);}
-.gray-arrow-right {background-image: url(icons/gray-arrow-right.svg);}
+.green-arrow-down { background-image: url(../icons/green-arrow-down.svg); }
+.globe-stand {background-image: url(../icons/GlobeStand.svg);}
+.book-bookmark {background-image: url(../icons/BookBookmark.svg);}
+.hands-clapping {background-image: url(../icons/HandsClapping.svg);}
+.film-slate {background-image: url(../icons/FilmSlate.svg);}
+.timer {background-image: url(../icons/Timer.svg);}
+.magnifying-glass {background-image: url(../icons/MagnifyingGlass.svg);}
+.blue-arrow-down {background-image: url(../icons/blue-arrow-down.svg);}
+.facebook {background-image: url(../icons/facebook.svg);}
+.instagram {background-image: url(../icons/instagram.svg);}
+.cases {background-image: url(../icons/cases.svg);}
+.telegram {background-image: url(../icons/telegram.svg);}
+.gray-arrow-right {background-image: url(../icons/gray-arrow-right.svg);}
 
 /* =Buttons */
 .btn-orange,
@@ -3326,7 +3328,7 @@ input[type="checkbox"]:focus {
 }
 
 .layout-header ~ .layout-content {
-    padding-top: 16rem;
+    padding-top: 8rem;
 }
 
 .header-logo > img {
@@ -3362,7 +3364,7 @@ input[type="checkbox"]:focus {
 }
 
 .layout-header .nav > .dropdown > a::after {
-    background-image: url(icons/blue_light_arrow_down.svg);
+    background-image: url(../icons/blue_light_arrow_down.svg);
 }
 
 .layout-header .dropdown-menu > li > a:hover,
@@ -3377,7 +3379,7 @@ input[type="checkbox"]:focus {
     }
 
     .layout-header ~ .layout-content {
-        padding-top: 18rem;
+        padding-top: 10rem;
     }
 
     .header-logo > img {
@@ -3385,6 +3387,43 @@ input[type="checkbox"]:focus {
     }
 }
 
+@media screen and (min-width: 905px) {
+    .layout-header {
+        padding: 4rem 0;
+    }
+
+    .layout-header ~ .layout-content {
+        padding-top: 15rem;
+    }
+
+    .header-logo > img {
+        max-height: 56px;
+    }
+}
+
 .layout-content {
     padding-top: 8rem;
 }
+
+/* Content */
+.block-intro {
+    background-image: url(../images/image\ 146.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block-intro-wrapper {
+    background: rgba(1, 89, 242, 0.75);
+}
+
+@media screen and (min-width: 905px) {
+    .block-intro {
+        background-image: none;
+    }
+
+    .block-intro-wrapper {
+        background: transparent;
+    }
+}
+
