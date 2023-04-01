@@ -36,7 +36,7 @@
 
     --container-pad: 2rem;
     --container-tab-pad: 3rem;
-    --container-desk-pad: 4rem;
+    --container-desk-pad: 16rem;
 }
 
 *,
@@ -69,7 +69,7 @@ h1,
 .h1 {
     font-size: 6rem;
     line-height: 1.44;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 h2,
@@ -290,6 +290,7 @@ img {
 .c-violet { color: var(--color-violet) !important; }
 .c-transparent-black { color: var(--color-transparent-black) !important; }
 
+.bg-transparent {background-color: transparent !important;}
 .bg-black {background-color: var(--color-black) !important;}
 .bg-dark-blue { background-color: var(--color-dark-blue) !important; }
 .bg-gray { background-color: var(--color-gray) !important; }
@@ -338,6 +339,7 @@ img {
     .c-tab-violet { color: var(--color-violet) !important; }
     .c-tab-transparent-black { color: var(--color-transparent-black) !important; }
 
+    .bg-tab-transparent {background-color: transparent !important;}
     .bg-tab-black {background-color: var(--color-black) !important;}
     .bg-tab-dark-blue { background-color: var(--color-dark-blue) !important; }
     .bg-tab-gray { background-color: var(--color-gray) !important; }
@@ -384,6 +386,7 @@ img {
     .c-desk-violet { color: var(--color-violet) !important; }
     .c-desk-transparent-black { color: var(--color-transparent-black) !important; }
 
+    .bg-desk-transparent {background-color: transparent !important;}
     .bg-desk-black {background-color: var(--color-black) !important;}
     .bg-desk-dark-blue { background-color: var(--color-dark-blue) !important; }
     .bg-desk-gray { background-color: var(--color-gray) !important; }
@@ -630,7 +633,7 @@ label.radio {
 
 select.control {
     appearance: none;
-    background-image: url(icons/blue-arrow-down.svg);
+    background-image: url(../icons/blue-arrow-down.svg);
     background-repeat: no-repeat;
     background-position: right 11px top 50%;
     cursor: pointer;
@@ -836,6 +839,8 @@ input[type="checkbox"]:focus {
 .col-span-10 {grid-column-end: span 10 !important; }
 .col-span-11 {grid-column-end: span 11 !important; }
 .col-span-12 {grid-column-end: span 12 !important; }
+
+
 
 .row-start-1 {grid-row-start: 1 !important; }
 .row-start-2 {grid-row-start: 2 !important; }
@@ -3132,6 +3137,11 @@ input[type="checkbox"]:focus {
     padding: 3rem 2rem;
 }
 
+.program > .block-anchor {
+    position: relative;
+    top: -4rem;
+}
+
 .program-title {
     margin-bottom: 3rem;
 }
@@ -3156,6 +3166,7 @@ input[type="checkbox"]:focus {
     font-size: 2.25rem;
     line-height: 1.2;
     margin-bottom: 1rem;
+    font-weight: 800;
 }
 
 .program-modules .module-text {
@@ -3165,6 +3176,7 @@ input[type="checkbox"]:focus {
 
 .program-modules .module-image {
     margin-left: 2rem;
+    display: none;
     flex: 0 0 86px;
 }
 
@@ -3176,6 +3188,9 @@ input[type="checkbox"]:focus {
 @media screen and (min-width: 721px) {
     .program {
         padding: 4rem;
+    }
+    .program-modules .module-image {
+        display: block;
     }
 }
 
@@ -3231,7 +3246,7 @@ input[type="checkbox"]:focus {
 .nav > .dropdown > a::after {
     content: '';
 
-    background: url(./icons/green-arrow-down.svg) no-repeat 0 0;
+    background: url(../icons/green-arrow-down.svg) no-repeat 0 0;
     margin-left: 0.5rem;
 
     display: block;
@@ -3331,6 +3346,11 @@ input[type="checkbox"]:focus {
     padding-top: 8rem;
 }
 
+.layout-header ~ .layout-content .block-anchor {
+    margin-top: -8rem;
+    padding-top: 8rem;
+}
+
 .header-logo > img {
     display: block;
     max-width: none;
@@ -3382,6 +3402,11 @@ input[type="checkbox"]:focus {
         padding-top: 10rem;
     }
 
+    .layout-header ~ .layout-content .block-anchor {
+        margin-top: -12rem;
+        padding-top: 12rem;
+    }
+
     .header-logo > img {
         max-height: 48px;
     }
@@ -3396,6 +3421,11 @@ input[type="checkbox"]:focus {
         padding-top: 15rem;
     }
 
+    .layout-header ~ .layout-content .block-anchor {
+        margin-top: -17rem;
+        padding-top: 17rem;
+    }
+
     .header-logo > img {
         max-height: 56px;
     }
@@ -3407,7 +3437,7 @@ input[type="checkbox"]:focus {
 
 /* Content */
 .block-intro {
-    background-image: url(../images/image\ 146.png);
+    background-image: url(../images/block_tablet.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3424,6 +3454,12 @@ input[type="checkbox"]:focus {
 
     .block-intro-wrapper {
         background: transparent;
+    }
+}
+
+@media screen and (max-width: 721px) {
+    .block-intro {
+        background-position: 0% 10%;
     }
 }
 
